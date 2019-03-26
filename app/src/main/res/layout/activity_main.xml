@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textElement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -27,14 +28,13 @@
         android:layout_marginRight="92dp"
         android:layout_marginBottom="8dp"
         android:onClick="showElement"
-        android:text="Button"
+        android:text="Show"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttonHide"
         app:layout_constraintHorizontal_bias="0.708"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.623"
-        tools:text="Show" />
+        app:layout_constraintVertical_bias="0.623" />
 
     <Button
         android:id="@+id/buttonHide"
@@ -45,10 +45,10 @@
         android:layout_marginRight="56dp"
         android:layout_marginBottom="8dp"
         android:onClick="hideElement"
-        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.623" />
+        app:layout_constraintVertical_bias="0.623"
+        android:text="Hide" />
 
 </android.support.constraint.ConstraintLayout>
